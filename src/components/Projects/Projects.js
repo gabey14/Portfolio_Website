@@ -1,90 +1,84 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.jpeg";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import ProjectCard from './ProjectCards'
+import Particle from '../Particle'
+
+import irrigation from '../../Assets/Projects/autoirrigation.png'
+import taskercli from '../../Assets/Projects/taskercli.png'
+import vscoderecent from '../../Assets/Projects/vscode_recent.png'
+import swiftecom from '../../Assets/Projects/swiftecom.png'
+import task from '../../Assets/Projects/task.png'
 
 function Projects() {
   return (
-    <Container fluid className="project-section">
+    <Container fluid className='project-section'>
       <Particle />
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+        <h1 className='project-heading'>
+          My Recent <strong className='purple'>Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: 'white' }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
+          <Col md={4} className='project-card'>
             <ProjectCard
-              imgPath={chatify}
+              imgPath={taskercli}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
+              title='Tasker CLI'
+              description='Tasker CLI is a task management system for technical people. It is a command-line application that is very fast and easy to use. The CLI is fast, powerful and intuitive. It is built using Golang & Cobra CLI framework.'
+              link='https://github.com/gabey14/tasker-gocli'
+              live='https://sites.google.com/view/tasker-cli/home'
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={4} className='project-card'>
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={vscoderecent}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              link="https://github.com/soumyajit4419/Bits-0f-C0de"
+              title='Vscode-Recent Ulauncher Extension'
+              description='🖥 Open recent Vs Code folders and files using Ulauncher. My First Open Source Contribution was to this project which got merged and as it is a very useful tool for me to open my Vs Code projects easily.'
+              link='https://github.com/plibither8/ulauncher-vscode-recent/pull/17'
+              live='https://ext.ulauncher.io/-/github-plibither8-ulauncher-vscode-recent'
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={4} className='project-card'>
             <ProjectCard
-              imgPath={editor}
+              imgPath={swiftecom}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              link="https://github.com/soumyajit4419/Editor.io"
+              title='Swift Ecommerce Store'
+              description='An E-commerce web-application which provides various features like sorting, filtering, as well as two viewoptions Grid & List. Custom hooks have been used along with Redux. Responsive Website with support for authentication for login by Auth0 along with Stripe payment and Serverless functions.'
+              link='https://github.com/gabey14/Swift-Ecommerce-Store'
+              live='https://swift-ecommerce-store.netlify.app'
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={4} className='project-card'>
             <ProjectCard
-              imgPath={leaf}
+              imgPath={task}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              link="https://github.com/soumyajit4419/Plant_AI"
+              title='Task Manager - Flutter'
+              description='A cross-platform application built using Flutter where one can manage their incomes/workshops/subscriptions and theirdaily tasks. Has the major sign-in options along with guest user access the data is stored in a real-time databasein Firebase.'
+              link='https://github.com/gabey14/Task-Manager'
+              live='https://sites.google.com/view/taskmanager-in/home'
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={4} className='project-card'>
             <ProjectCard
-              imgPath={suicide}
+              imgPath={irrigation}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              link="https://github.com/soumyajit4419/AI_For_Social_Good"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title='Auto-Irrigation-System'
+              description='The problems regarding the manual irrigation system were analyzed & this project aims to solve thoseproblems by using an efficient Auto Irrigation System using an Arduino-UNO. It provides water to the plants whenever it detects the moisture level of the soil is less with the help of themoisture sensor also an LDR is used to identify if its day or night and decide if the pump should be on or off. We have used a light dependent resistor (LDR) to identify day or night. We have used submersible water pump to provide water to the soil.'
+              link='https://github.com/gabey14/Auto-Irrigation-System'
+              live='https://github.com/gabey14/Auto-Irrigation-System/blob/main/ES%20PROJECT.png'
             />
           </Col>
         </Row>
       </Container>
     </Container>
-  );
+  )
 }
 
-export default Projects;
+export default Projects
