@@ -30,9 +30,7 @@ function ResumeNew() {
   // create a onclickhandler
   const onClickHandler = () => {
     // NOTE Change link to this resume page
-    navigator.clipboard.writeText(
-      'https://gabeytech.netlify.app/resume'
-    )
+    navigator.clipboard.writeText('https://gabeytech.netlify.app/resume')
     alert.success('Copied to clipboard')
   }
 
