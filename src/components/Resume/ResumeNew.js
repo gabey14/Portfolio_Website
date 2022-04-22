@@ -30,7 +30,7 @@ function ResumeNew() {
   // create a onclickhandler
   const onClickHandler = () => {
     // NOTE Change link to this resume page
-    navigator.clipboard.writeText('https://gabeytech.netlify.app/resume')
+    navigator.clipboard.writeText('https://gabey.me/resume')
     alert.success('Copied to clipboard')
   }
 
@@ -99,7 +99,7 @@ function ResumeNew() {
                   {/* NOTE check this on the mobile */}
                   <a
                     className='whatsapp'
-                    href='whatsapp://send?text=https://gabeytech.netlify.app/resume'
+                    href='whatsapp://send?text=https://gabey.me/resume'
                     data-action='share/whatsapp/share'
                     style={{ color: 'white', fontSize: '1.2rem' }}
                     target='_blank'
