@@ -31,7 +31,7 @@ function ResumeNew() {
   const onClickHandler = () => {
     // NOTE Change link to this resume page
     navigator.clipboard.writeText(
-      'https://docs.google.com/viewerng/viewer?url=https://github.com/gabey14/Resume/raw/master/Abey-George-Resume.pdf'
+      'https://gabeytech.netlify.app/resume'
     )
     alert.success('Copied to clipboard')
   }
@@ -101,7 +101,7 @@ function ResumeNew() {
                   {/* NOTE check this on the mobile */}
                   <a
                     className='whatsapp'
-                    href='whatsapp://send?text=https://docs.google.com/viewerng/viewer?url=https://github.com/gabey14/Resume/raw/master/Abey-George-Resume.pdf'
+                    href='whatsapp://send?text=https://gabeytech.netlify.app/resume'
                     data-action='share/whatsapp/share'
                     style={{ color: 'white', fontSize: '1.2rem' }}
                     target='_blank'
