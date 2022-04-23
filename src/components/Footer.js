@@ -75,7 +75,7 @@ function Footer() {
             <li className='social-icons'>
               <a
                 style={{ color: 'white' }}
-                href='mailto:abeygeorge14@gmail.com'
+                href="mailto:abeygeorge14@gmail.com?subject=Get%20in%20touch%2C%20Let's%20Talk!"
                 target='_blank'
                 rel='noreferrer'
               >
