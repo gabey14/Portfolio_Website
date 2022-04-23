@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container'
 import logo from '../Assets/AG.png'
 import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom'
-import { CgGitFork } from 'react-icons/cg'
+import { CgGitFork, CgMail } from 'react-icons/cg'
 import {
   AiFillStar,
   AiOutlineHome,
@@ -100,6 +100,17 @@ function NavBar() {
                 <ImBlog style={{ marginBottom: '2px' }} /> Blogs
               </Nav.Link>
             </Nav.Item> */}
+
+            <Nav.Item className='fork-btn'>
+              <Button
+                href='mailto:abeygeorge14@gmail.com'
+                target='_blank'
+                className='fork-btn-inner'
+              >
+                Contact Me &nbsp;
+                <CgMail style={{ fontSize: '1.2em' }} />{' '}
+              </Button>
+            </Nav.Item>
 
             <Nav.Item className='fork-btn'>
               <Button
