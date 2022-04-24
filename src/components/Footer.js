@@ -7,7 +7,7 @@ import {
   AiFillHeart,
   AiFillMail,
 } from 'react-icons/ai'
-import { FaLinkedinIn } from 'react-icons/fa'
+import { FaLinkedinIn, FaDiscord } from 'react-icons/fa'
 
 function Footer() {
   let date = new Date()
@@ -80,6 +80,16 @@ function Footer() {
                 rel='noreferrer'
               >
                 <AiFillMail />
+              </a>
+            </li>
+            <li className='social-icons'>
+              <a
+                style={{ color: 'white' }}
+                href='https://discordapp.com/users/762520608688832533'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <FaDiscord />
               </a>
             </li>
           </ul>

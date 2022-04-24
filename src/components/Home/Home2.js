@@ -8,7 +8,7 @@ import {
   AiFillInstagram,
   AiFillMail,
 } from 'react-icons/ai'
-import { FaLinkedinIn } from 'react-icons/fa'
+import { FaLinkedinIn, FaDiscord } from 'react-icons/fa'
 
 function Home2() {
   return (
@@ -118,6 +118,16 @@ function Home2() {
                   className='icon-colour  home-social-icons'
                 >
                   <AiFillMail />
+                </a>
+              </li>
+              <li className='social-icons'>
+                <a
+                  href='https://discordapp.com/users/762520608688832533'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='icon-colour  home-social-icons'
+                >
+                  <FaDiscord />
                 </a>
               </li>
             </ul>
