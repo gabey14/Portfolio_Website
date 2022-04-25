@@ -22,6 +22,7 @@ function Footer() {
               href='https://github.com/soumyajit4419/Portfolio'
               target='_blank'
               rel='noopener noreferrer'
+              style={{ color: '#c770f0' }}
             >
               Soumyajit Behera
             </a>

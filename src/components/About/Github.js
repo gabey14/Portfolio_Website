@@ -15,7 +15,7 @@ function Github() {
         color='#c084f5'
         fontSize={16}
         blockRadius={3}
-        showWeekdayLabels={true}
+        // showWeekdayLabels={true}
       />
     </Row>
   )
