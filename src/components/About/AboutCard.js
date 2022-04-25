@@ -11,7 +11,8 @@ function AboutCard() {
             Hi Everyone, I am <span className='purple'>Abey George </span>
             from <span className='purple'> Mumbai, India.</span>
             <br />I am an Undergraduate student currently pursuing my Bachelor's
-            Degree in Information Technology from St. Xavier's College.
+            Degree in Information Technology from{' '}
+            <span className='purple'>St. Xavier's College.</span>
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
@@ -28,7 +29,7 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ color: 'rgb(155 126 172)' }}>
+          <p style={{ color: '#ca92ff' }}>
             " When something is important enough, you do it even if the odds are
             not in your favor. "{' '}
           </p>

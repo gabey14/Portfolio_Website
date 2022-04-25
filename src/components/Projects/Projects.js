@@ -48,7 +48,7 @@ function Projects() {
               imgPath={swiftecom}
               isBlog={false}
               title='Swift Ecommerce Store'
-              description='An E-commerce web-application which provides various features like sorting, filtering, as well as two viewoptions Grid & List. Custom hooks have been used along with Redux. Responsive Website with support for authentication for login by Auth0 along with Stripe payment and Serverless functions.'
+              description='An E-commerce web-application which provides various features like sorting, filtering, as well as two view options   Grid & List. Custom hooks have been used along with Redux. Responsive Website with support for authentication for login by Auth0 along with Stripe payment and Serverless functions.'
               link='https://github.com/gabey14/Swift-Ecommerce-Store'
               live='https://swift-ecommerce-store.netlify.app'
             />
@@ -59,7 +59,7 @@ function Projects() {
               imgPath={task}
               isBlog={false}
               title='Task Manager - Flutter'
-              description='A cross-platform application built using Flutter where one can manage their incomes/workshops/subscriptions and theirdaily tasks. Has the major sign-in options along with guest user access the data is stored in a real-time databasein Firebase.'
+              description='A cross-platform application built using Flutter where one can manage their incomes, subscriptions, etc and their daily tasks. Has the major sign-in options along with guest user access the data is stored in a real-time database in Firebase.'
               link='https://github.com/gabey14/Task-Manager'
               live='https://sites.google.com/view/taskmanager-in/home'
             />
@@ -70,7 +70,7 @@ function Projects() {
               imgPath={irrigation}
               isBlog={false}
               title='Auto-Irrigation-System'
-              description='The problems regarding the manual irrigation system were analyzed & this project aims to solve thoseproblems by using an efficient Auto Irrigation System using an Arduino-UNO. It provides water to the plants whenever it detects the moisture level of the soil is less with the help of themoisture sensor also an LDR is used to identify if its day or night and decide if the pump should be on or off. We have used a light dependent resistor (LDR) to identify day or night. We have used submersible water pump to provide water to the soil.'
+              description='The problems regarding the manual irrigation system were analyzed & this project aims to solve those problems by using an efficient Auto Irrigation System using an Arduino-UNO. It provides water to the plants whenever it detects the moisture level of the soil is less with the help of the moisture sensor also an LDR is used to identify if its day or night and decide if the pump should be on or off. We have used a light dependent resistor (LDR) to identify day or night. We have used submersible water pump to provide water to the soil.'
               link='https://github.com/gabey14/Auto-Irrigation-System'
               live='https://github.com/gabey14/Auto-Irrigation-System/blob/main/ES%20PROJECT.png'
             />
