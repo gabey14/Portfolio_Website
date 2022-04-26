@@ -9,6 +9,7 @@ import {
   AiFillMail,
 } from 'react-icons/ai'
 import { FaLinkedinIn, FaDiscord } from 'react-icons/fa'
+import { RiWhatsappFill } from 'react-icons/ri'
 
 function Home2() {
   return (
@@ -128,6 +129,16 @@ function Home2() {
                   className='icon-colour  home-social-icons'
                 >
                   <FaDiscord />
+                </a>
+              </li>
+              <li className='social-icons'>
+                <a
+                  href='https://api.whatsapp.com/send?phone=+918169879795'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='icon-colour  home-social-icons'
+                >
+                  <RiWhatsappFill />
                 </a>
               </li>
             </ul>
