@@ -40,8 +40,9 @@
   margin-top: 20px;
 }
 
-@media screen and (min-width: 767px) {
+/* @media screen and (min-width: 767px) {
   .whatsapp {
     display: none;
+		
   }
-}
+} */
