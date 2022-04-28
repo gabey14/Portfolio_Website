@@ -13,6 +13,7 @@ import { Document, Page, pdfjs } from 'react-pdf'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 import Popup from 'reactjs-popup'
 import './Resume.css'
+import { motion } from 'framer-motion'
 import { useAlert } from 'react-alert'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
 
@@ -35,7 +36,11 @@ function ResumeNew() {
   }
 
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.5 } }}
+      exit={{ opacity: 0 }}
+    >
       <Container fluid className='resume-section'>
         <Particle />
         <Row style={{ justifyContent: 'center', position: 'relative' }}>
@@ -97,19 +102,21 @@ function ResumeNew() {
               <ul className='footer-icons'>
                 <li className='share-icons'>
                   {/* NOTE check this on the mobile */}
-                  <a
+                  <motion.a
                     className='whatsapp'
                     href='https://api.whatsapp.com/send?text=https://gabey.me/resume'
                     data-action='share/whatsapp/share'
                     style={{ color: 'white', fontSize: '1.2rem' }}
                     target='_blank'
                     rel='noopener noreferrer'
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.8 }}
                   >
                     <AiOutlineWhatsApp />
-                  </a>
+                  </motion.a>
                 </li>
                 <li className='share-icons'>
-                  <button
+                  <motion.button
                     onClick={() => onClickHandler()}
                     style={{
                       color: 'white',
@@ -117,9 +124,11 @@ function ResumeNew() {
                       background: 'transparent',
                       border: 'none',
                     }}
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.8 }}
                   >
                     <AiFillCopy />
-                  </button>
+                  </motion.button>
                 </li>
               </ul>
             </div>
@@ -135,7 +144,7 @@ function ResumeNew() {
           </Button> */}
         </Row>
       </Container>
-    </div>
+    </motion.div>
   )
 }
 
