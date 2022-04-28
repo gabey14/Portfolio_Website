@@ -101,7 +101,6 @@ function ResumeNew() {
             <div className='popup-icons'>
               <ul className='footer-icons'>
                 <li className='share-icons'>
-                  {/* NOTE check this on the mobile */}
                   <motion.a
                     className='whatsapp'
                     href='https://api.whatsapp.com/send?text=https://gabey.me/resume'
@@ -133,15 +132,6 @@ function ResumeNew() {
               </ul>
             </div>
           </Popup>
-          {/* <Button
-            variant='primary'
-            href={pdf}
-            target='_blank'
-            style={{ maxWidth: '250px' }}
-          >
-            <AiOutlineShareAlt />
-            &nbsp;Share CV
-          </Button> */}
         </Row>
       </Container>
     </motion.div>
