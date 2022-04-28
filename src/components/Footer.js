@@ -14,10 +14,10 @@ function Footer() {
   let date = new Date()
   let year = date.getFullYear()
   return (
-    <Slide direction='up' duration={500}>
-      <Container fluid className='footer'>
-        <Row>
-          <Col md='4' className='footer-copywright'>
+    <Container fluid className='footer'>
+      <Row>
+        <Col md='4' className='footer-copywright'>
+          <Slide direction='down' duration={500} cascade>
             <h3>
               Developed by Abey George{' '}
               <a
@@ -29,11 +29,15 @@ function Footer() {
                 <AiFillHeart />
               </a>
             </h3>
-          </Col>
-          <Col md='4' className='footer-copywright'>
+          </Slide>
+        </Col>
+        <Col md='4' className='footer-copywright'>
+          <Slide direction='down' duration={500} delay={200}>
             <h3>Copyright © {year} AG</h3>
-          </Col>
-          <Col md='4' className='footer-body'>
+          </Slide>
+        </Col>
+        <Col md='4' className='footer-body'>
+          <Slide direction='down' cascade delay={100} duration={200}>
             <ul className='footer-icons'>
               <li className='social-icons'>
                 <a
@@ -106,10 +110,10 @@ function Footer() {
                 </a>
               </li>
             </ul>
-          </Col>
-        </Row>
-      </Container>
-    </Slide>
+          </Slide>
+        </Col>
+      </Row>
+    </Container>
   )
 }
 
