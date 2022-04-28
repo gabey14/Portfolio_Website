@@ -18,14 +18,14 @@ function Footer() {
       <Row>
         <Col md='4' className='footer-copywright'>
           <h3>
-            Modified by Abey George <AiFillHeart />{' '}
+            Developed by Abey George{' '}
             <a
               href='https://github.com/soumyajit4419/Portfolio'
               target='_blank'
               rel='noopener noreferrer'
               style={{ color: '#c770f0' }}
             >
-              Soumyajit Behera
+              <AiFillHeart />
             </a>
           </h3>
         </Col>
