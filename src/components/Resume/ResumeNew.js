@@ -110,7 +110,7 @@ function ResumeNew() {
                     target='_blank'
                     rel='noopener noreferrer'
                     whileHover={{ scale: 1.2 }}
-                    whileTap={{ scale: 0.8 }}
+                    whileTap={{ scale: 0.9, x: '-5px', y: '5px' }}
                   >
                     <AiOutlineWhatsApp />
                   </motion.a>
@@ -125,7 +125,7 @@ function ResumeNew() {
                       border: 'none',
                     }}
                     whileHover={{ scale: 1.2 }}
-                    whileTap={{ scale: 0.8 }}
+                    whileTap={{ scale: 0.9, x: '-5px', y: '5px' }}
                   >
                     <AiFillCopy />
                   </motion.button>
