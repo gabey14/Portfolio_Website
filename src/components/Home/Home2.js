@@ -17,12 +17,12 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className='home-about-description'>
-            <Fade duration={4000} fraction={0.7} triggerOnce>
+            <Fade duration={4000} fraction={0.7}>
               <h1 style={{ fontSize: '2.6em' }}>
                 LET ME <span className='purple'> INTRODUCE </span> MYSELF
               </h1>
             </Fade>
-            <Fade duration={4000} delay={800} triggerOnce>
+            <Fade duration={4000} delay={800}>
               <p className='home-about-body'>
                 A tech enthusiast whose goal is to follow my passion for
                 technology and build things that make people's lives better.
@@ -62,7 +62,7 @@ function Home2() {
             </Fade>
           </Col>
           <Col md={4} className='myAvtar'>
-            <Fade duration={4000} delay={800} triggerOnce>
+            <Fade duration={4000} delay={800}>
               <Tilt>
                 <img src={myImg} className='img-fluid' alt='avatar' />
               </Tilt>
