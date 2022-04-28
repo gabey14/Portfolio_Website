@@ -14,7 +14,7 @@ function Footer() {
   let date = new Date()
   let year = date.getFullYear()
   return (
-    <Slide direction='up' duration={1000}>
+    <Slide direction='up' duration={500}>
       <Container fluid className='footer'>
         <Row>
           <Col md='4' className='footer-copywright'>
