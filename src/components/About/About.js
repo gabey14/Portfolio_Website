@@ -7,6 +7,7 @@ import Aboutcard from './AboutCard'
 import laptopImg from '../../Assets/about.png'
 import Toolstack from './Toolstack'
 import { motion } from 'framer-motion'
+import { Rotate, Bounce, Zoom } from 'react-awesome-reveal'
 function About() {
   return (
     <motion.div
@@ -26,30 +27,40 @@ function About() {
                 paddingBottom: '50px',
               }}
             >
-              <h1 style={{ fontSize: '2.1em', paddingBottom: '20px' }}>
-                Know Who <strong className='purple'>I'M</strong>
-              </h1>
-              <Aboutcard />
+              <Rotate direction='bottom-left' triggerOnce>
+                <h1 style={{ fontSize: '2.1em', paddingBottom: '20px' }}>
+                  Know Who <strong className='purple'>I'M</strong>
+                </h1>
+              </Rotate>
+              <Rotate direction='bottom-left' triggerOnce delay={400}>
+                <Aboutcard />
+              </Rotate>
             </Col>
             <Col
               md={5}
               style={{ paddingTop: '120px', paddingBottom: '50px' }}
               className='about-img'
             >
-              <img src={laptopImg} alt='about' className='img-fluid' />
+              <Rotate direction='bottom-left' triggerOnce delay={400}>
+                <img src={laptopImg} alt='about' className='img-fluid' />
+              </Rotate>
             </Col>
           </Row>
-          <h1 className='project-heading'>
-            Professional <strong className='purple'>Skillset </strong>
-          </h1>
-
+          <Bounce cascade fraction={1}>
+            <h1 className='project-heading'>
+              Professional <strong className='purple'>Skillset </strong>
+            </h1>
+          </Bounce>
           <Techstack />
-
-          <h1 className='project-heading'>
-            <strong className='purple'>Tools</strong> I use
-          </h1>
+          <Bounce cascade>
+            <h1 className='project-heading'>
+              <strong className='purple'>Tools</strong> I use
+            </h1>
+          </Bounce>
           <Toolstack />
-          <Github />
+          <Zoom direction='down' cascade fraction={0}>
+            <Github />
+          </Zoom>
         </Container>
       </Container>
     </motion.div>

@@ -11,36 +11,55 @@ import {
   SiVivaldi,
   SiUbuntu,
 } from 'react-icons/si'
+import { Zoom } from 'react-awesome-reveal'
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: 'center', paddingBottom: '50px' }}>
       <Col xs={4} md={2} className='tech-icons'>
-        <SiLinux />
+        <Zoom>
+          <SiLinux />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <SiUbuntu />
+        <Zoom delay={100}>
+          <SiUbuntu />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <SiVisualstudiocode />
+        <Zoom delay={200}>
+          <SiVisualstudiocode />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <SiIntellijidea />
+        <Zoom delay={300}>
+          <SiIntellijidea />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <SiPostman />
+        <Zoom delay={400}>
+          <SiPostman />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <SiInsomnia />
+        <Zoom delay={500}>
+          <SiInsomnia />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <SiNetlify />
+        <Zoom delay={600}>
+          <SiNetlify />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <SiHeroku />
+        <Zoom delay={700}>
+          <SiHeroku />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <SiVivaldi />
+        <Zoom delay={800}>
+          <SiVivaldi />
+        </Zoom>
       </Col>
     </Row>
   )

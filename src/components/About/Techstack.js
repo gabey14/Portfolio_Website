@@ -9,39 +9,59 @@ import {
   DiGit,
 } from 'react-icons/di'
 import { SiMysql, SiGo, SiJava, SiFlutter } from 'react-icons/si'
-
+import { Zoom } from 'react-awesome-reveal'
 function Techstack() {
   return (
     <Row style={{ justifyContent: 'center', paddingBottom: '50px' }}>
       <Col xs={4} md={2} className='tech-icons'>
-        <CgCPlusPlus />
+        <Zoom>
+          <CgCPlusPlus />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <DiReact />
+        <Zoom delay={100}>
+          <DiReact />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <DiMongodb />
+        <Zoom delay={200}>
+          <DiMongodb />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <SiJava />
+        <Zoom delay={300}>
+          <SiJava />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <DiGit />
+        <Zoom delay={400}>
+          <DiGit />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <SiMysql />
+        <Zoom delay={500}>
+          <SiMysql />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <DiPython />
+        <Zoom delay={600}>
+          <DiPython />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <SiGo />
+        <Zoom delay={700}>
+          <SiGo />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <DiJavascript1 />
+        <Zoom delay={800}>
+          <DiJavascript1 />
+        </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <SiFlutter />
+        <Zoom delay={900}>
+          <SiFlutter />
+        </Zoom>
       </Col>
     </Row>
   )
