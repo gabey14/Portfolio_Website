@@ -9,6 +9,7 @@ import vscoderecent from '../../Assets/Projects/vscode_recent.png'
 import swiftecom from '../../Assets/Projects/swiftecom.png'
 import task from '../../Assets/Projects/task.png'
 import { motion } from 'framer-motion'
+import { Slide } from 'react-awesome-reveal'
 
 function Projects() {
   return (
@@ -20,12 +21,17 @@ function Projects() {
       <Container fluid className='project-section'>
         <Particle />
         <Container>
-          <h1 className='project-heading'>
-            My Recent <strong className='purple'>Works </strong>
-          </h1>
-          <p style={{ color: 'white' }}>
-            Here are a few projects I've worked on recently.
-          </p>
+          <Slide direction='down'>
+            <h1 className='project-heading'>
+              My Recent
+              <strong className='purple'> Works </strong>
+            </h1>
+          </Slide>
+          <Slide direction='up'>
+            <p style={{ color: 'white' }}>
+              Here are a few projects I've worked on recently.
+            </p>
+          </Slide>
           <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
             <Col md={4} className='project-card'>
               <ProjectCard
