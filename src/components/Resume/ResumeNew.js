@@ -63,7 +63,7 @@ function ResumeNew() {
               file={resumeLink}
               className='d-flex justify-content-center'
             >
-              <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+              <Page pageNumber={1} scale={width > 786 ? 1.6 : 0.6} />
             </Document>
           </Row>
         </Zoom>
@@ -71,7 +71,7 @@ function ResumeNew() {
         <br />
         <br />
         <br />
-        <Zoom>
+        <Zoom delay={100}>
           <Row style={{ justifyContent: 'center', position: 'relative' }}>
             <Popup
               trigger={
