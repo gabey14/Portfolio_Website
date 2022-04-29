@@ -22,42 +22,42 @@ function Toolstack() {
         </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <Zoom delay={100}>
+        <Zoom delay={50}>
           <SiUbuntu />
         </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <Zoom delay={200}>
+        <Zoom delay={100}>
           <SiVisualstudiocode />
         </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <Zoom delay={300}>
+        <Zoom delay={150}>
           <SiIntellijidea />
         </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <Zoom delay={400}>
+        <Zoom delay={200}>
           <SiPostman />
         </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <Zoom delay={500}>
+        <Zoom delay={250}>
           <SiInsomnia />
         </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <Zoom delay={600}>
+        <Zoom delay={300}>
           <SiNetlify />
         </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <Zoom delay={700}>
+        <Zoom delay={350}>
           <SiHeroku />
         </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
-        <Zoom delay={800}>
+        <Zoom delay={400}>
           <SiVivaldi />
         </Zoom>
       </Col>
