@@ -71,11 +71,13 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className='home-about-social'>
-            <AttentionSeeker effect='flash' triggerOnce delay={300}>
+            <AttentionSeeker effect='pulse' delay={300}>
               <h1>FIND ME ON</h1>
               <p>
                 Feel free to <span className='purple'>connect </span>with me
               </p>
+            </AttentionSeeker>
+            <Fade direction='top-left' cascade duration={150}>
               <ul className='home-about-social-links'>
                 <li className='social-icons'>
                   <a
@@ -148,7 +150,7 @@ function Home2() {
                   </a>
                 </li>
               </ul>
-            </AttentionSeeker>
+            </Fade>
           </Col>
         </Row>
       </Container>

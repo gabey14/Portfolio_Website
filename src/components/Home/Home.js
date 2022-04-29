@@ -20,7 +20,7 @@ function Home() {
           <Container className='home-content'>
             <Row>
               <Col md={7} className='home-header'>
-                <AttentionSeeker triggerOnce>
+                <AttentionSeeker effect='bounce'>
                   <h1 style={{ paddingBottom: 15 }} className='heading'>
                     Hi There!{' '}
                     <span className='wave' role='img' aria-labelledby='wave'>
@@ -40,7 +40,7 @@ function Home() {
               </Col>
 
               <Col md={5} style={{ paddingBottom: 20 }}>
-                <AttentionSeeker triggerOnce>
+                <AttentionSeeker effect='bounce'>
                   <img
                     src={homeLogo}
                     alt='home pic'
