@@ -110,7 +110,7 @@ function ResumeNew() {
                   <li className='share-icons'>
                     <motion.a
                       className='whatsapp'
-                      href='https://api.whatsapp.com/send?text=https://gabey.me/resume'
+                      href='https://api.whatsapp.com/send?text=Check out my Resume - https://gabey.me/resume'
                       data-action='share/whatsapp/share'
                       style={{ color: 'white', fontSize: '1.2rem' }}
                       target='_blank'
