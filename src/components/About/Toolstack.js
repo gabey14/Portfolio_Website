@@ -4,12 +4,13 @@ import {
   SiLinux,
   SiVisualstudiocode,
   SiPostman,
-  SiHeroku,
   SiNetlify,
   SiInsomnia,
   SiIntellijidea,
   SiVivaldi,
   SiUbuntu,
+  SiGithub,
+  SiTodoist,
 } from 'react-icons/si'
 import { Zoom } from 'react-awesome-reveal'
 
@@ -24,6 +25,11 @@ function Toolstack() {
       <Col xs={4} md={2} className='tech-icons'>
         <Zoom delay={50}>
           <SiUbuntu />
+        </Zoom>
+      </Col>
+      <Col xs={4} md={2} className='tech-icons'>
+        <Zoom delay={50}>
+          <SiGithub />
         </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
@@ -53,7 +59,7 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
         <Zoom delay={350}>
-          <SiHeroku />
+          <SiTodoist />
         </Zoom>
       </Col>
       <Col xs={4} md={2} className='tech-icons'>
