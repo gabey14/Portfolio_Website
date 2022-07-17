@@ -50,7 +50,7 @@ function Projects() {
                 isBlog={false}
                 title='Vscode-Recent Ulauncher Extension'
                 description='🖥 Open recent Vs Code folders and files using Ulauncher. My First Open Source Contribution was to this project which got merged and as it is a very useful tool for me to open my Vs Code projects easily.'
-                link='https://github.com/plibither8/ulauncher-vscode-recent/pull/17'
+                link='https://github.com/plibither8/ulauncher-vscode-recent/pulls?q=is%3Apr+author%3A%40me+'
                 live='https://ext.ulauncher.io/-/github-plibither8-ulauncher-vscode-recent'
               />
             </Col>
